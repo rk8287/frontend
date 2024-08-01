@@ -1,0 +1,55 @@
+/* Description.css */
+
+.main-container {
+    margin: 2rem 8rem;
+    padding: 1rem; /* Added padding for better spacing on small screens */
+}
+
+.main-container > h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem; /* Adjust font size */
+    text-align: center; /* Center text for better alignment */
+    margin-bottom: 1.5rem;
+}
+
+.main-container > p {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.6; /* Adjusted for better readability */
+    font-size: 1rem; /* Adjust font size */
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .main-container {
+        margin: 1rem 2rem; /* Reduced margins for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        margin: 1rem; /* Further reduced margins for smaller screens */
+    }
+
+    .main-container > h1 {
+        font-size: 2rem; /* Smaller font size for headings */
+    }
+
+    .main-container > p {
+        font-size: 0.9rem; /* Smaller font size for paragraphs */
+    }
+}
+
+@media (max-width: 480px) {
+    .main-container {
+        margin: 0.5rem; /* Minimal margins for very small screens */
+    }
+
+    .main-container > h1 {
+        font-size: 2rem; /* Even smaller font size for headings */
+    }
+
+    .main-container > p {
+        font-size: 0.8rem; /* Even smaller font size for paragraphs */
+    }
+}

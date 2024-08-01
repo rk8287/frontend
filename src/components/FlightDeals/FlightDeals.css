@@ -1,0 +1,127 @@
+/* FlightDeals.css */
+
+.flight-deals {
+  text-align: center;
+  padding: 2rem 8rem;
+  background: #f8f8f8;
+  margin-top: 4rem;
+}
+
+.flight-deals h2 {
+  font-size: 2rem; /* Adjusted for better readability on smaller screens */
+  color: #333;
+  margin-bottom: 1rem; /* Added margin for spacing */
+}
+
+.flight-deals p {
+  font-size: 1rem; /* Adjusted for better readability on smaller screens */
+  color: #666;
+  margin-bottom: 2rem; /* Added margin for spacing */
+}
+
+.deals-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.deal-card {
+  position: relative;
+  width: 250px;
+  margin: 10px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+.deal-card:hover {
+  transform: scale(1.05); /* Zoom in effect */
+}
+
+.deal-card img {
+  width: 100%;
+  height: 200px; /* Adjusted for better proportion on smaller screens */
+  object-fit: cover;
+}
+
+.best-deal-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff5a5f;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.deal-card h3 {
+  font-size: 1rem; /* Adjusted for better readability on smaller screens */
+  color: #333;
+  margin: 10px;
+}
+
+.deal-card p {
+  font-size: 0.875rem; /* Adjusted for better readability on smaller screens */
+  color: #666;
+  margin: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .flight-deals {
+      padding: 1.5rem 2rem;
+  }
+
+  .deal-card {
+      width: 220px; /* Adjust width for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .flight-deals {
+      padding: 1rem;
+  }
+
+  .deal-card {
+      width: 200px; /* Adjust width for smaller screens */
+  }
+
+  .flight-deals h2 {
+      font-size: 1.5rem;
+  }
+
+  .flight-deals p {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .flight-deals {
+      padding: 0.5rem;
+  }
+
+  .deal-card {
+      width: 100%; /* Full width for very small screens */
+      margin: 5px 0; /* Adjust margins for better spacing */
+  }
+
+  .deal-card img {
+      height: 150px; /* Adjust height for very small screens */
+  }
+
+  .flight-deals h2 {
+      font-size: 1.25rem; /* Smaller font size for very small screens */
+      text-align: start;
+  }
+
+  .flight-deals p {
+      font-size: 0.875rem; /* Smaller font size for very small screens */
+      text-align: start;
+  }
+}

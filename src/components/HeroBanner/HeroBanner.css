@@ -1,0 +1,100 @@
+.hero-section {
+  position: relative;
+  background-image: url('../../assets/img/farshad_rezvanian.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-top: 2%;
+  text-align: center;
+  overflow: hidden; /* Ensure overlay stays within section bounds */
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  z-index: 1; /* Place overlay above the background but below the content */
+}
+
+.hero-section .overlayy {
+  position: relative; /* Ensure overlay content is above the pseudo-element */
+  z-index: 2; /* Ensure overlay content is above the pseudo-element */
+  padding: 40px 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-section h1 {
+  font-family: Arial;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 41.4px;
+  text-align: center;
+}
+
+.hero-section p {
+  margin-bottom: 20px;
+  max-width: 600px;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.other-dtails {
+  display: flex;
+  padding: 2rem 0;
+}
+
+.det {
+  padding: 0 4rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.det > .icon {
+  font-size: 2rem;
+  color: #f54c4c;
+}
+
+.det > .text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.overlayy > h2 {
+  font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 480px) {
+  .overlayy > h2 {
+      display: none;
+  }
+
+  .overlayy > h1 {
+      font-size: 2rem;
+      margin-top: 2rem;
+  }
+
+  .other-dtails {
+      display: none;
+  }
+}

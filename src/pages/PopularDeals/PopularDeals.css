@@ -1,0 +1,179 @@
+.popular-deals-container-over {
+    max-width: 1500px;
+    margin: 0 auto; /* Center the container */
+    padding: 20px 130px;
+  }
+  .popular-deals-container-over img {
+    height: 35px;
+    width: 35px;
+  }
+  .popular-deals-container-over h2 {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.13px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .deals-grid-over {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 30px;
+  }
+  
+  .deal-card-over {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #F1F6FF;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  
+  .deal-info-over {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1; /* Allow flex items to grow */
+  }
+  
+  .deal-cities-over {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 10px;
+  }
+  
+  .deal-cities-over h3 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    letter-spacing: 0.5px;
+  }
+  
+  .deal-cities-over h4 {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    letter-spacing: 0.5px;
+  }
+  
+  .dealsB-over {
+    width: 96.27px;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #283C8B;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.1px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .deal-price-over {
+    font-weight: bold;
+    font-size: 18px;
+    color: #007bff;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Styles for small mobile devices */
+  @media (max-width: 480px) {
+    .popular-deals-container-over {
+      padding: 10px;
+    }
+  
+    .popular-deals-container-over h2 {
+      font-size: 18px;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+  
+    .deals-grid-over {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  
+    .deal-card-over {
+      /* flex-direction: column; */
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .deal-info-over {
+      /* flex-direction: column; */
+      align-items: flex-start;
+    }
+  
+    .deal-cities-over {
+      margin: 5px 0;
+    }
+  
+    .deal-cities-over h3 {
+      font-size: 14px;
+      line-height: 1.2;
+    }
+  
+    .deal-cities-over h4 {
+      font-size: 12px;
+      line-height: 1.2;
+    }
+  
+    .dealsB-over {
+      width: 100%;
+      font-size: 12px;
+      line-height: 1.2;
+      padding: 8px;
+    }
+  
+    .deal-price-over {
+      font-size: 16px;
+    }
+  }
+  
+  /* Styles for tablets */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .popular-deals-container-over {
+      padding: 15px;
+    }
+  
+    .popular-deals-container-over h2 {
+      font-size: 20px;
+      line-height: 1.4;
+      margin-bottom: 15px;
+    }
+  
+    .deals-grid-over {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+  
+    .deal-card-over {
+      padding: 15px;
+    }
+  
+    .deal-cities-over h3 {
+      font-size: 15px;
+      line-height: 1.3;
+    }
+  
+    .deal-cities-over h4 {
+      font-size: 13px;
+      line-height: 1.3;
+    }
+  
+    .dealsB-over {
+      font-size: 13px;
+      line-height: 1.3;
+      padding: 6px;
+    }
+  }
+  
