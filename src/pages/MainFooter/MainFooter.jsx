@@ -67,7 +67,7 @@ const MainFooter = () => {
           </div>
         </div>
         <div className="footer-copyright w-full bg-gray-700 px-4 py-6 sm:flex sm:items-center sm:justify-between">
-          <Footer.Copyright href="#" by="Copyright © 2022 - 2024 Timeless Travels.com is a Part of Cheap Travel Group INC. All Rights Reserved." year={2024} className="copyright-tag" />
+          <Footer.Copyright href="#" by="Timesless Travels" year={2024} className="copyright-tag" />
           <div className="flex space-x-6 sm:mt-0 sm:justify-center footer-icons">
             <Footer.Icon href="#" icon={BsFacebook} />
             <Footer.Icon href="#" icon={BsInstagram} />

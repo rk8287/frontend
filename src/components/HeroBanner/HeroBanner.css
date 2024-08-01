@@ -4,7 +4,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 60vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,6 +82,12 @@
 .overlayy > h2 {
   font-size: 2rem;
   font-family: 'Times New Roman', Times, serif;
+}
+
+.overlayy > h1 {
+
+ margin-bottom: 1.5rem;
+
 }
 
 @media (max-width: 480px) {
