@@ -7,8 +7,9 @@ const HeroBanner = () => {
     return (
         <div className="hero-section">
             <div className="overlayy">
-                <h2><span style={{color:'orangered'}}>Compare</span> and Book</h2>
-                <h1>Cheap Flights on Over <span style={{color:"#f54c4c"}}>600 Airlines</span></h1>
+               
+                <h1>Find<span style={{color:"#f54c4c",fontWeight:'800'}}> cheap flights </span>and save</h1>
+                <h2>Search and compare our best deals with over 400+ airlines - <span style={{color:'orangered'}}>Book now!</span></h2>
                 <Search />
 
                 <div className="other-dtails">
