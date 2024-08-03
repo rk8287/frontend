@@ -7,8 +7,9 @@ import {
   BsInstagram,
   BsTwitter,
 } from "react-icons/bs";
-import "./MainFooter.css";
 import { MdFlightTakeoff } from "react-icons/md";
+import { Link } from "react-router-dom";
+import "./MainFooter.css";
 
 const one = require('../../assets/img/credit-card1.png');
 const two = require('../../assets/img/credit-card2.png');
@@ -16,10 +17,6 @@ const three = require('../../assets/img/credit-card4.png');
 const four = require('../../assets/img/credit-card5.png');
 const five = require('../../assets/img/autho.png');
 const six = require('../../assets/img/icon07.jpg');
-
-
-
-
 
 const MainFooter = () => {
   return (
@@ -29,32 +26,31 @@ const MainFooter = () => {
           <div>
             <Footer.LinkGroup col>
               <Footer.Link href="#">
-              <div className="logos">
-                    <h2>Time<span style={{color:"orangered"}}>less</span> Travels <MdFlightTakeoff className='logo-icons'/></h2>
+                <div className="logos">
+                  <h2>Time<span style={{color:"orangered"}}>less</span> Travels <MdFlightTakeoff className='logo-icons'/></h2>
                 </div>
               </Footer.Link>
               <Footer.Link href="#">2024 © Timeless Travels</Footer.Link>
-              <Footer.Link href="#">California CST: 12345678</Footer.Link>
-              <Footer.Link href="#">Blog</Footer.Link>
             </Footer.LinkGroup>
           </div>
-          
+
           <div>
             <Footer.Title title="COMPANY" />
             <Footer.LinkGroup col>
-              <Footer.Link to="/about">About Us</Footer.Link>
-              <Footer.Link href="#">Disclaimer</Footer.Link>
-              <Footer.Link href="#">Privacy Policy</Footer.Link>
-              <Footer.Link href="#">Term & Conditions</Footer.Link>
-              <Footer.Link href="#">Cancellations & Refund Policy</Footer.Link>
+              <Footer.Link href="/about">About Us</Footer.Link>
+              <Footer.Link href="/disclaimer">Disclaimer</Footer.Link>
+              <Footer.Link href="/privacy">Privacy Policy</Footer.Link>
+              <Footer.Link href="#">Terms & Conditions</Footer.Link>
+              <Footer.Link href="/cancellation">Cancellations & Refund Policy</Footer.Link>
             </Footer.LinkGroup>
           </div>
+
           <div>
             <Footer.Title title="WE ACCEPT" />
             <Footer.LinkGroup row className="payment-icon">
               <Footer.Link href="#" className="main-card">
-              <img className="card-img" src={six} alt="" />
-              <img style={{width:"100px"}} className="card-img" src={five} alt="" />
+                <img className="card-img" src={six} alt="" />
+                <img style={{width:"100px"}} className="card-img" src={five} alt="" />
                 <img className="card-img" src={one} alt="" />
                 <img className="card-img" src={two} alt="" />
                 <img className="card-img" src={three} alt="" />
@@ -63,8 +59,9 @@ const MainFooter = () => {
             </Footer.LinkGroup>
           </div>
         </div>
+
         <div className="footer-copyright w-full bg-gray-700 px-4 py-6 sm:flex sm:items-center sm:justify-between">
-          <Footer.Copyright href="#" by="Timesless Travels" year={2024} className="copyright-tag" />
+          <Footer.Copyright href="#" by="Timeless Travels" year={2024} className="copyright-tag" />
           <div className="flex space-x-6 sm:mt-0 sm:justify-center footer-icons">
             <Footer.Icon href="#" icon={BsFacebook} />
             <Footer.Icon href="#" icon={BsInstagram} />
@@ -73,8 +70,6 @@ const MainFooter = () => {
             <Footer.Icon href="#" icon={BsDribbble} />
           </div>
         </div>
-
-       
 
         <div className="paragraph">
           *All the fares displayed are in USD and include all taxes, fees and
@@ -85,7 +80,6 @@ const MainFooter = () => {
           transpacific fares – from the West Coast). The maximum allowable stay
           is six months. Please call our toll-free line for current best prices
           and additional details.
-          {/* <br /> */}
           ^Savings up to 40% off are indicated off the full unrestricted
           published airfares of major airlines and may vary based on individual
           fare rules. Some airlines may impose additional baggage charges. The

@@ -39,8 +39,8 @@ const Header = () => {
                 <nav className={`nav-bar ${isMobileMenuOpen ? 'open' : ''}`}>
                     <Link className='link' to="/" onClick={toggleMobileMenu}><FaHome className='center'/>Home</Link>
                     <Link className='link' to="/special-offers" onClick={toggleMobileMenu}><MdOutlineFlightTakeoff className='center'/>Special Offers</Link>
-                    <Link className='link' to="/about-us" onClick={toggleMobileMenu}><FaUser className='center'/>About Us</Link>
-                    <Link className='link' to="/contact-us" onClick={toggleMobileMenu}><FaPhoneAlt className='center'/>Contact Us</Link>
+                    <Link className='link' to="/about" onClick={toggleMobileMenu}><FaUser className='center'/>About Us</Link>
+                    <Link className='link' to="/contact" onClick={toggleMobileMenu}><FaPhoneAlt className='center'/>Contact Us</Link>
                 </nav>
 
                 <div className="contact-no">

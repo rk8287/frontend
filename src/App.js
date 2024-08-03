@@ -8,6 +8,7 @@ import About from './pages/About/About';
 import Cancellation from './pages/Cancellation/Cancellation';
 import Disclaimer from './pages/Disclaimer/Disclaimer';
 import Privacy from './pages/Privacy/Privacy';
+import Contact from './components/Contact/Contact';
 
 
 
@@ -21,6 +22,7 @@ function App() {
         <Route path={'/cancellation'} element={<Cancellation/>}/>
         <Route path={'/disclaimer'} element={<Disclaimer/>}/>
         <Route path={'/privacy'} element={<Privacy/>}/>
+        <Route path={'/contact'} element={<Contact/>}/>
         
       </Routes>
       <MainFooter/>
