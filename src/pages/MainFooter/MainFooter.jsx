@@ -40,7 +40,7 @@ const MainFooter = () => {
               <Footer.Link href="/about">About Us</Footer.Link>
               <Footer.Link href="/disclaimer">Disclaimer</Footer.Link>
               <Footer.Link href="/privacy">Privacy Policy</Footer.Link>
-              <Footer.Link href="#">Terms & Conditions</Footer.Link>
+              <Footer.Link href="/term-conditions">Terms & Conditions</Footer.Link>
               <Footer.Link href="/cancellation">Cancellations & Refund Policy</Footer.Link>
             </Footer.LinkGroup>
           </div>

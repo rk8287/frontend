@@ -1,0 +1,33 @@
+.term-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .term-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .term-container h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .term-container p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .term-container a {
+    color: #ff4b2b;
+    text-decoration: none;
+  }
+  
+  .term-container a:hover {
+    text-decoration: underline;
+  }
+  
