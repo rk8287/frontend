@@ -14,6 +14,9 @@ const one = require('../../assets/img/credit-card1.png');
 const two = require('../../assets/img/credit-card2.png');
 const three = require('../../assets/img/credit-card4.png');
 const four = require('../../assets/img/credit-card5.png');
+const five = require('../../assets/img/autho.png');
+const six = require('../../assets/img/icon07.jpg');
+
 
 
 
@@ -35,29 +38,23 @@ const MainFooter = () => {
               <Footer.Link href="#">Blog</Footer.Link>
             </Footer.LinkGroup>
           </div>
-          <div>
-            <Footer.Title title="Information" />
-            <Footer.LinkGroup col>
-              <Footer.Link href="#">Help Center</Footer.Link>
-              <Footer.Link href="#">Contacts</Footer.Link>
-              <Footer.Link href="#">Privacy Policy</Footer.Link>
-              <Footer.Link href="#">Terms of Use</Footer.Link>
-            </Footer.LinkGroup>
-          </div>
+          
           <div>
             <Footer.Title title="COMPANY" />
             <Footer.LinkGroup col>
-              <Footer.Link href="#">About Us</Footer.Link>
-              <Footer.Link href="#">Blog</Footer.Link>
-              <Footer.Link href="#">News & Press</Footer.Link>
-              <Footer.Link href="#">Reviews</Footer.Link>
-              <Footer.Link href="#">Airlines</Footer.Link>
+              <Footer.Link to="/about">About Us</Footer.Link>
+              <Footer.Link href="#">Disclaimer</Footer.Link>
+              <Footer.Link href="#">Privacy Policy</Footer.Link>
+              <Footer.Link href="#">Term & Conditions</Footer.Link>
+              <Footer.Link href="#">Cancellations & Refund Policy</Footer.Link>
             </Footer.LinkGroup>
           </div>
           <div>
             <Footer.Title title="WE ACCEPT" />
             <Footer.LinkGroup row className="payment-icon">
               <Footer.Link href="#" className="main-card">
+              <img className="card-img" src={six} alt="" />
+              <img style={{width:"100px"}} className="card-img" src={five} alt="" />
                 <img className="card-img" src={one} alt="" />
                 <img className="card-img" src={two} alt="" />
                 <img className="card-img" src={three} alt="" />

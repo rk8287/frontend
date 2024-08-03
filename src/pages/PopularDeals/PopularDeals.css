@@ -1,6 +1,6 @@
 .popular-deals-container-over {
     max-width: 1500px;
-    margin: 0 auto; /* Center the container */
+    margin: 0 auto; 
     padding: 20px 130px;
   }
   .popular-deals-container-over img {
@@ -38,7 +38,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-grow: 1; /* Allow flex items to grow */
+    flex-grow: 1; 
   }
   
   .deal-cities-over {
@@ -142,7 +142,7 @@
   /* Styles for tablets */
   @media (min-width: 481px) and (max-width: 768px) {
     .popular-deals-container-over {
-      padding: 15px;
+      padding: 0 50px;
     }
   
     .popular-deals-container-over h2 {
@@ -152,8 +152,9 @@
     }
   
     .deals-grid-over {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr;
       gap: 15px;
+      /* padding: 0 50px; */
     }
   
     .deal-card-over {
@@ -177,3 +178,9 @@
     }
   }
   
+
+  @media (max-width: 1024px) {
+    .popular-deals-container-over {
+      padding: 0 50px;
+    }
+  }

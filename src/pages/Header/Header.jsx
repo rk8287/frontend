@@ -45,7 +45,7 @@ const Header = () => {
 
                 <div className="contact-no">
                     <img src={ic} alt="contact icon" />
-                    <h3>+1-800-300-500</h3>
+                    <h2 className='call-me'>+1-800-300-500</h2>
                 </div>
 
                 <div className="hamburger-menu" onClick={toggleMobileMenu}>
