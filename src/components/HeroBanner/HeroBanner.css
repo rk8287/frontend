@@ -4,7 +4,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 80vh;
+  height: 95vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,18 +89,33 @@
  margin-bottom: 1.5rem;
 
 }
-
 @media (max-width: 480px) {
   .overlayy > h2 {
-      display: none;
+    display: none;
   }
 
   .overlayy > h1 {
-      font-size: 2rem;
-      margin-top: 2rem;
+    font-size: 2rem;
+    margin-top: 8rem;
   }
 
   .other-dtails {
-      display: none;
+    display: none;
   }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .overlayy > h1 {
+    font-size: 2rem;
+    margin-top: 12rem;
+  }
+
+  .overlayy > h2 {
+    display: none;
+  }
+
+  .other-dtails {
+    display: none;
+  }
+
 }
