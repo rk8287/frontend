@@ -224,7 +224,7 @@
     }
 }
 
-@media (min-width: 486px) and (max-width: 567px) {
+@media (min-width: 482px) and (max-width: 567px) {
     .one-header {
         padding: 0.8rem 1rem;
     }
