@@ -1,9 +1,5 @@
 .hero-section {
   position: relative;
-  background-image: url('../../assets/img/farshad_rezvanian.jpg'); 
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   height: 95vh;
   display: flex;
   justify-content: center;
@@ -11,7 +7,19 @@
   color: white;
   padding-top: 2%;
   text-align: center;
-  overflow: hidden; /* Ensure overlay stays within section bounds */
+  overflow: hidden;
+}
+
+
+/* Video Background Styles */
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Place the video behind the content */
 }
 
 .hero-section::before {
@@ -60,6 +68,23 @@
   display: flex;
   padding: 2rem 0;
 }
+
+/* Add keyframes for the looping animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.det > .icon {
+  font-size: 2rem;
+  color: #f54c4c;
+  animation: bounce 1s infinite; /* Apply the animation */
+}
+
 
 .det {
   padding: 0 4rem;

@@ -36,12 +36,7 @@ const Header = () => {
                <Link style={{color:'black'}} to={'/'}><h2>Time<span style={{color:"orangered"}}>less</span> Travels <MdFlightTakeoff className='logo-icons'/></h2></Link>
                 </div>
 
-                <nav className={`nav-bar ${isMobileMenuOpen ? 'open' : ''}`}>
-                    <Link className='link' to="/" onClick={toggleMobileMenu}><FaHome className='center'/>Home</Link>
-                    <Link className='link' to="#special" onClick={toggleMobileMenu}><MdOutlineFlightTakeoff className='center'/>Special Offers</Link>
-                    <Link className='link' to="/about" onClick={toggleMobileMenu}><FaUser className='center'/>About Us</Link>
-                    <Link className='link' to="/contact" onClick={toggleMobileMenu}><FaPhoneAlt className='center'/>Contact Us</Link>
-                </nav>
+             
 
                 <div className="contact-no">
                     <img src={ic} alt="contact icon" />

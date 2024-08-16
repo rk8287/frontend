@@ -1,40 +1,36 @@
 import React from 'react'
 import './About.css'
-const img1 = require('../../assets/img/banner3.jpg')
+import { Link } from 'react-router-dom'
+const img1 = require('../../assets/img/pexels-wanderer-731217.jpg')
 
 
 const About = () => {
   return (
    <>
-
-    <div className='about-main-container'>
-
-<div className="about-main-section">
-
-<div className="about-img-container">
-  <img src={img1} alt="" />
-  <div className="about-text-overlay">
-  About Us
-  </div>
-  
-</div>
-
-
-<div className="about-des">
-    
-<div className="about-header">
-  <h3>About</h3>
-</div>
-
-<hr />
-  <p>At Timeless Travels, our mission is to empower people on their journeys—whether domestic, inbound, foreign, or outbound. Our focus is on making travel easy, enjoyable, and memorable. We offer a wide range of travel and tourism services and feature a user-friendly, creative online portal for convenient airline ticket booking.</p>
-  <p>Life is a journey, and we're here to inspire you to make every stop along the way special. We help you imagine and plan your travels with a mix of timeless and innovative ideas, ensuring you receive rewarding experiences and valuable memories. Our Customer First Promise includes personalized assistance before, during, and after your trip.</p>
-  <p>We're dedicated to delivering an exceptional flying experience by combining modern technology with customer loyalty. We offer a diverse range of fares to various destinations and pride ourselves on providing seamless service for both leisure and business travelers.</p>
-  <p>Our extensive network allows us to offer both domestic and international flight tickets, and our strength lies in providing the right booking options with hassle-free service. As a result, we have built a loyal client base who rely on us for their travel needs.</p>
-</div>
-
-</div>
-</div>
+ <div className="about-container">
+      <div className="about-image">
+        <img src={img1} alt="Plane" />
+      </div>
+      <div className="about-content">
+        <h3 className="about-overview">Overview</h3>
+        <h2 className="about-title">About Timless Travels</h2>
+        <p className="about-description">
+          Timeless Travels serves as your ultimate destination for accessing flight
+          bargains, last-minute travel options, and an array of travel advice
+          and engaging blogs that ignite your wanderlust. We consist of a
+          dedicated team of enthusiastic and well-traveled individuals committed
+          to simplifying the process of discovering and comparing the finest
+          flight deals. Being one of the globe's leading flight comparison
+          platforms, Planet Fares stands as your initial step in the journey of
+          travel planning.
+        </p>
+       <Link to={"/contact"}> <button className="button" data-text="Awesome">
+    <span className="actual-text">&nbsp;Contact&nbsp;</span>
+    <span aria-hidden="true" className="hover-text">&nbsp;Contact&nbsp;</span>
+</button></Link>
+      </div>
+      
+    </div>
    </>
   )
 }

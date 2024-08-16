@@ -18,10 +18,21 @@
   text-align: center;
 }
 
+/* Add keyframes for the bouncing animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 .header-item-not img {
   width: 90px;
   height: 90px;
   margin-right: 10px;
+  animation: bounce 1s infinite; /* Apply the animation */
 }
 
 .header-item-not h3 {

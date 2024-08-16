@@ -39,11 +39,12 @@
     flex-wrap: wrap;
     font-weight: 600;
     letter-spacing: 0.07rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 }
 
 .content > p {
     padding: 0 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .contact-no {

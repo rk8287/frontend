@@ -6,6 +6,7 @@ import FlightOffers from '../FlightOffers/FlightOffers'
 import Description from '../../pages/Description/Description'
 import PopularDeals from '../../pages/PopularDeals/PopularDeals'
 import './Home.css'
+import About from '../../pages/About/About'
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
     <HeroBanner/>
      <Deals/>
      <FlightDeals/>
+     <About/>
      <Description/>
      <FlightOffers/>
      <PopularDeals/>
