@@ -1,8 +1,15 @@
 import React from 'react'
 import { MdFlightTakeoff, MdPhone, MdEmail, MdLocationOn } from 'react-icons/md';
 import './Contact.css'
+import { useEffect } from 'react';
 
 const Contact = () => {
+
+   // Scroll to the top of the page when this component is rendered
+   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="contact-container">
     <div className="contact-header">
@@ -41,7 +48,7 @@ const Contact = () => {
         <p>22 JERICHO TPKE STE 102 MINEOLA, NY 11501</p>
         <p><MdPhone className="info-icon" /> Toll Free</p>
         <p>Call Now: <a href="tel:+18007306311">+1-800-730-6311</a></p>
-        <p><MdEmail className="info-icon" /> Email</p>
+        <p><MdEmail className="info-icon"/> Email</p>
         <p><a href="mailto:info@cheapttravelgroup.com">info@timelesstravels.com</a></p>
       </div>
     </div>

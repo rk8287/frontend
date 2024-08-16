@@ -1,5 +1,5 @@
 .contact-container {
-    font-family: Arial, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
   
   .contact-header {
@@ -93,13 +93,24 @@
   .contact-info p {
     margin-bottom: 10px;
     padding: 0.7rem 0;
+    display: flex;
+    align-items: center;
     
   }
   
+  .info-icon {
+    margin-right: 10px; /* Reduced margin for better alignment */
+    font-size: 1.5rem;   /* Adjusted size to balance with the text */
+    color: #283c8b;
+  }
+  
   .contact-info a {
+    margin-left: 2rem; /* Added margin to align with the text after the icon */
     color: #ff4b2b;
     text-decoration: none;
+    
   }
+  
   
   .contact-info a:hover {
     text-decoration: underline;

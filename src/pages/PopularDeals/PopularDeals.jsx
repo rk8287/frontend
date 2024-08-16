@@ -100,7 +100,7 @@ const PopularDeals = () => {
                 <h3 className="origin-over">{deal.origin}</h3>
                 <h4 className="destination-over">{deal.arrivalDate}</h4>
               </div>
-              <img src={TwoFlight} alt="" />
+              <img src={TwoFlight} alt=""  className="two-flight-animation"  />
               <div className="deal-cities-over">
                 <h3 className="origin-over">{deal.destination}</h3>
                 <h4 className="destination-over">{deal.departureDate}</h4>
