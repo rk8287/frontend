@@ -1,28 +1,36 @@
 import React, { useEffect, useState } from "react";
-import "./Search.css";
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+import MenuItem from '@mui/material/MenuItem';
+import Select from '@mui/material/Select';
+import FormControl from '@mui/material/FormControl';
+import InputLabel from '@mui/material/InputLabel';
+import Grid from '@mui/material/Grid';
+import InputAdornment from '@mui/material/InputAdornment';
+import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import airportData from "../../assets/img/airportData.json";
 
 const Search = () => {
   const [numAdults, setNumAdults] = useState(1);
-  const [airport, setAirport] = useState([]);
+  const [airportOptions, setAirportOptions] = useState([]);
   const [numChildren, setNumChildren] = useState(0);
   const [numInfants, setNumInfants] = useState(0);
   const [showPassengerOption, setShowPassengerOption] = useState(false);
-  const [setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [leavingFrom, setLeavingFrom] = useState("");
   const [goingTo, setGoingTo] = useState("");
   const [departureDate, setDepartureDate] = useState("");
   const [returningDate, setReturningDate] = useState("");
   const [flightClass, setFlightClass] = useState("Economy");
-  const [flightTripp, setFlightTripp] = useState("OneWay");
   const [tripType, setTripType] = useState("round-trip");
 
   useEffect(() => {
-    const AirportData = airportData.reduce((acc, curr) => {
-      acc[curr.AirportCode] = curr.AirportName;
-      return acc;
-    }, {});
-    setAirport(AirportData);
+    const formattedAirportData = airportData.map((airport) => ({
+      code: airport.AirportCode,
+      name: airport.AirportName
+    }));
+    setAirportOptions(formattedAirportData);
   }, []);
 
   const handleToggleShowPassenger = () => {
@@ -47,7 +55,7 @@ const Search = () => {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    if (!leavingFrom || !goingTo || !departureDate || (flightTripp === "RoundTrip" && !returningDate)) {
+    if (!leavingFrom || !goingTo || !departureDate || (tripType === "round-trip" && !returningDate)) {
       alert("Please fill in all required fields.");
       return;
     }
@@ -59,92 +67,159 @@ const Search = () => {
     }, 2000);
   };
 
-  const preventDefaultAction = (e) => {
-    e.preventDefault();
-  };
-
   return (
-    <div className="search-bar">
-      <div className="trip-options">
-        <button
-          className={`trip-option ${tripType === "round-trip" ? "active" : ""}`}
-          onClick={() => setTripType("round-trip")}
-        >
-          Round trip
-        </button>
-        <button
-          className={`trip-option ${tripType === "one-way" ? "active" : ""}`}
-          onClick={() => setTripType("one-way")}
-        >
-          One way
-        </button>
+    <Box
+      sx={{
+        width: '100%',
+        padding: 2,
+        boxSizing: 'border-box',
+        backgroundColor: '#f5f5f5',
+        borderRadius: 2,
+        boxShadow: 3,
+      }}
+    >
+      <Grid container spacing={2}>
+        <Grid item xs={12} sm={6} md={4}>
+          <Button
+            variant={tripType === "round-trip" ? "contained" : "outlined"}
+            onClick={() => setTripType("round-trip")}
+            fullWidth
+          >
+            Round trip
+          </Button>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4}>
+          <Button
+            variant={tripType === "one-way" ? "contained" : "outlined"}
+            onClick={() => setTripType("one-way")}
+            fullWidth
+          >
+            One way
+          </Button>
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <FormControl fullWidth>
+            <InputLabel>Class</InputLabel>
+            <Select
+              value={flightClass}
+              onChange={(e) => setFlightClass(e.target.value)}
+              label="Class"
+            >
+              <MenuItem value="Economy">Economy</MenuItem>
+              <MenuItem value="Business">Business</MenuItem>
+              <MenuItem value="First">First</MenuItem>
+            </Select>
+          </FormControl>
+        </Grid>
+      </Grid>
 
-        <div className="dropdown">
-          <button className="dropdown-button">Economy</button>
-          <div className="dropdown-content">
-            <a href="#">Economy</a>
-            <a href="#">Business</a>
-            <a href="#">First</a>
-          </div>
-        </div>
-      </div>
-      <div className="search-fields">
-        <div className="field">
-          <label>Leaving from</label>
-
-          <div class="custom-select-container">
-            <select id="fromAirports" class="custom-select">
-              {Object.entries(airport).map(([code, city]) => (
-                <option key={code} value={`${code} (${city})`}>
-                  {`${code} (${city})`}
-                </option>
+      <Grid container spacing={2} mt={2}>
+        <Grid item xs={12} sm={6} md={4}>
+          <FormControl fullWidth>
+            <InputLabel>Leaving from</InputLabel>
+            <Select
+              value={leavingFrom}
+              onChange={(e) => setLeavingFrom(e.target.value)}
+              label="Leaving from"
+            >
+              {airportOptions.map((airport) => (
+                <MenuItem key={airport.code} value={airport.code}>
+                  {airport.name}
+                </MenuItem>
               ))}
-            </select>
-          </div>
-
-
-
-          <button className="swap-button">&#8644;</button>
-        </div>
-        <div className="field">
-          <label>Going to</label>
-
-          <div class="custom-select-container">
-            <select id="toAirports" class="custom-select">
-              {Object.entries(airport).map(([code, city]) => (
-                <option key={code} value={`${code} (${city})`}>
-                  {`${code} (${city})`}
-                </option>
+            </Select>
+          </FormControl>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4}>
+          <FormControl fullWidth>
+            <InputLabel>Going to</InputLabel>
+            <Select
+              value={goingTo}
+              onChange={(e) => setGoingTo(e.target.value)}
+              label="Going to"
+            >
+              {airportOptions.map((airport) => (
+                <MenuItem key={airport.code} value={airport.code}>
+                  {airport.name}
+                </MenuItem>
               ))}
-            </select>
-          </div>
-
-        </div>
-        <div className="field">
-          <label>Departing</label>
-          <input
+            </Select>
+          </FormControl>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4}>
+          <TextField
+            fullWidth
             type="date"
+            label="Departing"
             value={departureDate}
             onChange={(e) => setDepartureDate(e.target.value)}
+            variant="outlined"
+            InputLabelProps={{ shrink: true }}
+            InputProps={{
+              endAdornment: (
+                <InputAdornment position="end">
+                  <CalendarTodayIcon />
+                </InputAdornment>
+              ),
+            }}
           />
-        </div>
-        <div className="field">
-          <label>Returning</label>
-          <input
-            type="date"
-            value={returningDate}
-            onChange={(e) => setReturningDate(e.target.value)}
+        </Grid>
+        {tripType === "round-trip" && (
+          <Grid item xs={12} sm={6} md={4}>
+            <TextField
+              fullWidth
+              type="date"
+              label="Returning"
+              value={returningDate}
+              onChange={(e) => setReturningDate(e.target.value)}
+              variant="outlined"
+              InputLabelProps={{ shrink: true }}
+              InputProps={{
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <CalendarTodayIcon />
+                  </InputAdornment>
+                ),
+              }}
+            />
+          </Grid>
+        )}
+        <Grid item xs={12} sm={6}>
+          <TextField
+            fullWidth
+            label="Passenger(s)"
+            value={`${numAdults} Adult${numAdults > 1 ? 's' : ''}, ${numChildren} Child${numChildren > 1 ? 'ren' : ''}, ${numInfants} Infant${numInfants > 1 ? 's' : ''}`}
+            InputProps={{
+              readOnly: true,
+            }}
           />
-        </div>
-        <div className="field">
-          <label>Passenger(s)</label>
-          <input type="text" placeholder="1 Adult" />
-        </div>
-        <button className="search-button" onClick={handleSearch}>
-          Search
-        </button>
-      </div>
-    </div>
+          <Button onClick={handleToggleShowPassenger} variant="outlined" fullWidth>
+            {showPassengerOption ? "Hide Passengers" : "Show Passengers"}
+          </Button>
+          {showPassengerOption && (
+            <Box sx={{ mt: 2 }}>
+              <Button onClick={() => handlePassengerChange('adults', 1)} variant="outlined">+ Adult</Button>
+              <Button onClick={() => handlePassengerChange('adults', -1)} variant="outlined">- Adult</Button>
+              <Button onClick={() => handlePassengerChange('children', 1)} variant="outlined">+ Child</Button>
+              <Button onClick={() => handlePassengerChange('children', -1)} variant="outlined">- Child</Button>
+              <Button onClick={() => handlePassengerChange('infants', 1)} variant="outlined">+ Infant</Button>
+              <Button onClick={() => handlePassengerChange('infants', -1)} variant="outlined">- Infant</Button>
+            </Box>
+          )}
+        </Grid>
+      </Grid>
+
+      <Button
+        onClick={handleSearch}
+        variant="contained"
+        color="primary"
+        fullWidth
+        sx={{ mt: 2 }}
+        disabled={loading}
+      >
+        {loading ? "Searching..." : "Search"}
+      </Button>
+    </Box>
   );
 };
 
