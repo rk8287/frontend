@@ -49,6 +49,11 @@
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
+  .header-item-not{
+    padding: 20px 0;
+  }
+
+
   .header-not {
       padding: 1rem 2rem;
   }
@@ -64,10 +69,16 @@
   
   .header-item-not p {
       font-size: 13px;
+      margin: 10px 0;
   }
 }
 
 @media (max-width: 768px) {
+
+  .header-item-not{
+    padding: 20px 0;
+  }
+
   .header-not {
       flex-direction: column;
       align-items: center;
@@ -86,6 +97,10 @@
 }
 
 @media (max-width: 480px) {
+  .header-item-not{
+    padding: 20px 0;
+  }
+
   .header-not {
       padding: 0.5rem;
       margin-top: 6rem;
@@ -103,5 +118,6 @@
   
   .header-item-not p {
       font-size: 12px;
+      margin: 10px 0;
   }
 }

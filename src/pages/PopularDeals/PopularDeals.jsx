@@ -88,33 +88,33 @@ const PopularDeals = () => {
 
   return (
     <div className="popular-deals-container-over">
-      <h2>Popular <span style={{ color: "#283C8B" }}>Deals</span></h2>
-      <div className="deals-grid-over">
-        {deals.map((deal, index) => (
-          <div className="deal-card-over" key={index}>
-            <div className="deal-info-over">
-              <div className="deal-cities-over">
-                <img src={deal.image} alt="" />
-              </div>
-              <div className="deal-cities-over">
-                <h3 className="origin-over">{deal.origin}</h3>
-                <h4 className="destination-over">{deal.arrivalDate}</h4>
-              </div>
-              <img src={TwoFlight} alt=""  className="two-flight-animation"  />
-              <div className="deal-cities-over">
-                <h3 className="origin-over">{deal.destination}</h3>
-                <h4 className="destination-over">{deal.departureDate}</h4>
-              </div>
-              <div className="deal-cities-over">
-                <h3 className="origin-over">{deal.price}</h3>
-                <button className='dealsB-over'>search now</button>
-              </div>
+    <h2>Popular <span style={{ color: "#283C8B" }}>Deals</span></h2>
+    <div className="deals-grid-over">
+      {deals.map((deal, index) => (
+        <div className="deal-card-over" key={index}>
+          <div className="deal-info-over">
+            <div className="deal-cities-over">
+              <img src={deal.image} alt="" />
+            </div>
+            <div className="deal-cities-over">
+              <h3 className="origin-over">{deal.origin}</h3>
+              <h4 className="destination-over">{deal.arrivalDate}</h4>
+            </div>
+            <img src={TwoFlight} alt=""  className="two-flight-animation"  />
+            <div className="deal-cities-over">
+              <h3 className="origin-over">{deal.destination}</h3>
+              <h4 className="destination-over">{deal.departureDate}</h4>
+            </div>
+            <div className="deal-cities-over">
+              <h3 className="origin-over">{deal.price}</h3>
+              <button className='dealsB-over'>search now</button>
             </div>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
-  );
+  </div>
+);
 };
 
 export default PopularDeals;

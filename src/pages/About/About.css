@@ -1,16 +1,13 @@
 .about-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    background-color: #f7f8fa;
-   
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #f7f8fa;
+}
 
-
-  /* From Uiverse.io by satyamchaudharydev */ 
-/* === removing default button style ===*/
+/* Button styling */
 .button {
   margin: 0;
   height: auto;
@@ -19,10 +16,6 @@
   border: none;
   cursor: pointer;
   margin-top: 4rem;
-}
-
-/* button styling */
-.button {
   --border-right: 6px;
   --text-stroke-color: rgba(0, 0, 0, 0.6);
   --animation-color: #e74c3c;
@@ -36,7 +29,7 @@
   color: transparent;
   -webkit-text-stroke: 1px var(--text-stroke-color);
 }
-/* this is the text, when you hover on button */
+
 .hover-text {
   position: absolute;
   box-sizing: border-box;
@@ -49,66 +42,67 @@
   transition: 0.5s;
   -webkit-text-stroke: 1px var(--animation-color);
 }
-/* hover */
+
 .button:hover .hover-text {
   width: 100%;
-  filter: drop-shadow(0 0 23px var(--animation-color))
+  filter: drop-shadow(0 0 23px var(--animation-color));
 }
-  
-  .about-image {
-    flex: 1;
-    max-width: 30%;
-    margin-right: 20px;
+
+.about-image {
+  flex: 1;
+  max-width: 30%;
+  margin-right: 20px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.about-content {
+  flex: 1;
+  max-width: 50%;
+  padding-left: 3rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center; /* Ensure text is centered */
+}
+
+.about-overview {
+  color: #f7a400;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.about-title {
+  color: #5a2d82;
+  font-size: 32px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.about-description {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #555;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
   }
-  
-  .about-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    
+
+  .about-image, .about-content {
+    max-width: 100%;
+    margin: 0;
+    padding-left: 0; /* Remove padding on mobile */
   }
-  
+
   .about-content {
-    flex: 1;
-    max-width: 50%;
-    padding-left: 3rem;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+    margin-top: 20px;
+    padding-left: 0; /* Ensure there's no left padding on mobile */
   }
-  
-  .about-overview {
-    color: #f7a400;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .about-title {
-    color: #5a2d82;
-    font-size: 32px;
-    margin: 10px 0;
-    font-weight: bold;
-  }
-  
-  .about-description {
-    font-size: 15px;
-    line-height: 1.5;
-    color: #555;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
-  
-  @media (max-width: 768px) {
-    .about-container {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .about-image, .about-content {
-      max-width: 100%;
-      margin: 0;
-    }
-  
-    .about-content {
-      margin-top: 20px;
-    }
-  }
-  
+}

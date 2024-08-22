@@ -26,7 +26,7 @@ const Header = () => {
             <header className="one-header">
                 <div className="content">
                     <p>24x7 Live Assistance</p>
-                    <p>+1-800-400-500</p>
+                    <p>(833) 588-2699</p>
                     <p>info@timetravels.com</p>
                 </div>
             </header>
@@ -40,7 +40,7 @@ const Header = () => {
 
                 <div className="contact-no">
                     <img src={ic} alt="contact icon" />
-                    <h2 className='call-me'>+1-800-300-500</h2>
+                    <h2><Link to="tel:+8335882699">(833) 588-2699</Link></h2>
                 </div>
 
                 <div className="hamburger-menu" onClick={toggleMobileMenu}>

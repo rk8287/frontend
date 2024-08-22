@@ -47,7 +47,7 @@ const Contact = () => {
         <p><MdLocationOn className="info-icon" /> Address</p>
         <p>22 JERICHO TPKE STE 102 MINEOLA, NY 11501</p>
         <p><MdPhone className="info-icon" /> Toll Free</p>
-        <p>Call Now: <a href="tel:+18007306311">+1-800-730-6311</a></p>
+        <p>Call Now: <a href="tel:+8335882699">(833) 588-2699</a></p>
         <p><MdEmail className="info-icon"/> Email</p>
         <p><a href="mailto:info@cheapttravelgroup.com">info@timelesstravels.com</a></p>
       </div>

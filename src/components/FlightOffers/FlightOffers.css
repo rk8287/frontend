@@ -88,7 +88,36 @@
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+  .flight-offers {
+    padding: 20px 20px; /* Reduce padding for smaller screens */
+  }
+
   .offers-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Stack cards in a single column */
+  }
+
+  .offer-card {
+    margin-bottom: 20px; /* Add margin between stacked cards */
+  }
+
+  .offer-content {
+    text-align: center; /* Center text content on smaller screens */
+  }
+
+  .offer-image {
+    height: auto; /* Allow image height to adjust naturally */
+  }
+
+  .offer-tag {
+    left: 50%;
+    transform: translateX(-50%); /* Center the offer tag */
+  }
+
+  .offer-content h2 {
+    font-size: 20px; /* Slightly smaller heading on mobile */
+  }
+
+  .price {
+    font-size: 18px; /* Adjust price font size for readability */
   }
 }
