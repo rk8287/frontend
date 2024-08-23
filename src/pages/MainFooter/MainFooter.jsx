@@ -49,8 +49,6 @@ const MainFooter = () => {
             <Footer.Title title="WE ACCEPT" />
             <Footer.LinkGroup row className="payment-icon">
               <Footer.Link href="#" className="main-card">
-                <img className="card-img" src={six} alt="" />
-                <img style={{width:"100px"}} className="card-img" src={five} alt="" />
                 <img className="card-img" src={one} alt="" />
                 <img className="card-img" src={two} alt="" />
                 <img className="card-img" src={three} alt="" />
@@ -62,13 +60,7 @@ const MainFooter = () => {
 
         <div className="footer-copyright w-full bg-gray-700 px-4 py-6 sm:flex sm:items-center sm:justify-between">
           <Footer.Copyright href="#" by="Timeless Travels" year={2024} className="copyright-tag" />
-          <div className="flex space-x-6 sm:mt-0 sm:justify-center footer-icons">
-            <Footer.Icon href="#" icon={BsFacebook} />
-            <Footer.Icon href="#" icon={BsInstagram} />
-            <Footer.Icon href="#" icon={BsTwitter} />
-            <Footer.Icon href="#" icon={BsGithub} />
-            <Footer.Icon href="#" icon={BsDribbble} />
-          </div>
+        
         </div>
 
         <div className="paragraph">
