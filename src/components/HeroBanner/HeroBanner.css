@@ -9,7 +9,6 @@
   overflow: hidden;
 }
 
-
 /* Video Background Styles */
 .video-background {
   position: absolute;
@@ -46,9 +45,9 @@
 
 .hero-section h1 {
   font-family: Arial;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 41.4px;
+  font-size: 3rem; /* Adjusted for better responsiveness */
+  font-weight: 500;
+  line-height: 1.2;
   text-align: center;
 }
 
@@ -56,9 +55,9 @@
   margin-bottom: 20px;
   max-width: 600px;
   font-family: Arial;
-  font-size: 16px;
+  font-size: 1rem; /* Adjusted for better readability on small screens */
   font-weight: 400;
-  line-height: 20.8px;
+  line-height: 1.5;
   text-align: center;
   color: #FFFFFF;
 }
@@ -66,80 +65,71 @@
 .other-dtails {
   display: flex;
   padding: 2rem 0;
+  
 }
 
-/* Add keyframes for the looping animation */
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
+.det {
+  padding: 0 2rem; /* Adjust padding for smaller screens */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem; /* Add spacing between details on small screens */
 }
 
 .det > .icon {
-  font-size: 2rem;
+  font-size: 1.5rem; /* Adjusted for better responsiveness */
   color: #f54c4c;
   animation: bounce 1s infinite; /* Apply the animation */
 }
 
-
-.det {
-  padding: 0 4rem;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
-.det > .icon {
-  font-size: 2rem;
-  color: #f54c4c;
-}
-
 .det > .text {
-  font-size: 1.2rem;
+  font-size: 1rem; /* Adjusted for better responsiveness */
   font-weight: 600;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .overlayy > h2 {
-  font-size: 2rem;
+  font-size: 1.5rem; /* Adjusted for better readability on small screens */
   font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 1rem; /* Add some margin for spacing */
 }
 
 .overlayy > h1 {
-
- margin-bottom: 1.5rem;
-
+  margin-bottom: 1.5rem;
 }
-@media (max-width: 480px) {
-  .overlayy > h2 {
-    display: none;
-  }
 
+@media (max-width: 480px) {
   .overlayy > h1 {
     font-size: 2rem;
-    margin-top: 8rem;
+    margin-top: 4rem; /* Adjust margin to fit content better */
+  }
+
+  .overlayy > h2 {
+    font-size: 1.2rem; /* Keep h2 visible but reduce size */
+    margin-bottom: 0.5rem; /* Adjust spacing */
   }
 
   .other-dtails {
-    display: none;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    flex-direction: column; /* Stack items on small screens */
   }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
   .overlayy > h1 {
-    font-size: 2rem;
-    margin-top: 12rem;
+    font-size: 2.5rem;
+    margin-top: 6rem; /* Adjust margin to fit content better */
   }
 
   .overlayy > h2 {
-    display: none;
+    font-size: 1.5rem; /* Keep h2 visible but reduce size */
+    margin-bottom: 1rem;
   }
 
   .other-dtails {
-    display: none;
+    flex-direction: row; /* Keep items in a row */
+    justify-content: center; /* Center items */
+    flex-direction: column; /* Stack items on small screens */
   }
-
 }

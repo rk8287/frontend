@@ -1,0 +1,94 @@
+.contact-section {
+    background-color: #f1f3f5; /* Light grey background */
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    max-width: 90%; /* Limit the section width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-section h2 {
+    font-size: 24px;
+    color: #1a1f36; /* Dark text color */
+    margin-bottom: 30px;
+}
+
+.contact-section p {
+    font-size: 16px;
+    color: #4a4a4a; /* Lighter text color */
+    margin-bottom: 30px;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+.contact-btn {
+    background-color: #e74c3c; /* Blue background */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    margin-bottom: 10px; /* Add space between wrapped buttons */
+}
+
+.contact-btn:hover {
+    background-color: #e45622; /* Darker blue on hover */
+}
+
+.email-btn {
+    border-radius: 25px;
+}
+
+.phone-btn {
+    border-radius: 25px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 30px;
+    }
+
+    .contact-section h2 {
+        font-size: 20px;
+    }
+
+    .contact-section p {
+        font-size: 14px;
+    }
+
+    .contact-btn {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-section {
+        padding: 20px;
+    }
+
+    .contact-section h2 {
+        font-size: 18px;
+    }
+
+    .contact-section p {
+        font-size: 12px;
+    }
+
+    .contact-buttons {
+        gap: 10px;
+    }
+
+    .contact-btn {
+        padding: 8px 14px;
+    }
+}

@@ -14,7 +14,7 @@ const FlightOffers = () => {
       <div className="offers-grid">
         <div className="offer-card">
           <div className="offer-image">
-            <img src={require("../../assets/img/FlightsforStudent.jpg")} alt="Flights under $199" />
+            <img src={require("../../assets/img/pexels-daniel-1547739.jpg")} alt="Flights under $199" />
             <div className="offer-tag">Best Offers</div>
           </div>
           <div className="offer-content">
@@ -63,6 +63,34 @@ const FlightOffers = () => {
             <p className="rating">Rating: <span>✩✩✩✩✩</span></p>
           </div>
         </div>
+
+        <div className="offer-card">
+          <div className="offer-image">
+            <img src={require("../../assets/img/pexels-olly-3769138.jpg")} alt="Senior Travel Flight" />
+            <div className="offer-tag">Best Offers</div>
+          </div>
+          <div className="offer-content">
+            <h2>Fastest Flight</h2>
+            <p>With PlanetFares Senior travel is easy on the pockets!</p>
+            <p className="price">Fares starting from <strong>$120.50</strong></p>
+            <p className="rating">Rating: <span>✩✩✩✩✩</span></p>
+          </div>
+        </div>
+
+        <div className="offer-card">
+          <div className="offer-image">
+            <img src={require("../../assets/img/pexels-imjimmyqian-1710482.jpg")} alt="Senior Travel Flight" />
+            <div className="offer-tag">Best Offers</div>
+          </div>
+          <div className="offer-content">
+            <h2>Chepest Flight</h2>
+            <p>With PlanetFares Senior travel is easy on the pockets!</p>
+            <p className="price">Fares starting from <strong>$120.50</strong></p>
+            <p className="rating">Rating: <span>✩✩✩✩✩</span></p>
+          </div>
+        </div>
+
+        
       </div>
     </div>
   );

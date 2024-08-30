@@ -1,6 +1,5 @@
 import React from 'react'
 import './HeroBanner.css'
-import Search from '../Search/Search'
 import { TiTick } from "react-icons/ti";
 const vc = require('../../assets/img/3740041-uhd_3840_2160_24fps.mp4')
 
@@ -18,7 +17,7 @@ const HeroBanner = () => {
                
                 <h1>Find<span style={{color:"#f54c4c",fontWeight:'800'}}> cheap flights </span>and save</h1>
                 <h2>Search and compare our best deals with over 400+ airlines - <span style={{color:'orangered'}}>Book now!</span></h2>
-                <Search />
+                
 
                 <div className="other-dtails">
                     <div className="det">
