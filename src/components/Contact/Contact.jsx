@@ -45,11 +45,11 @@ const Contact = () => {
       <div className="contact-info">
         <h2>Contact Us</h2>
         <p><MdLocationOn className="info-icon" /> Address</p>
-        <p>22 JERICHO TPKE STE 102 MINEOLA, NY 11501</p>
+        <p>737 E 105TH PL CHICAGO, IL 60628</p>
         <p><MdPhone className="info-icon" /> Toll Free</p>
-        <p>Call Now: <a href="tel:+8335882699">(833) 588-2699</a></p>
+        <p>Call Now: <a href="tel:+1 8444177506">(84) 441-775-06</a></p>
         <p><MdEmail className="info-icon"/> Email</p>
-        <p><a href="mailto:info@cheapttravelgroup.com">info@timelesstravels.com</a></p>
+        <p><a href="mailto:SUPPORT@TIMELESSTRAVEL.US">SUPPORT@TIMELESSTRAVEL.US</a></p>
       </div>
     </div>
   </div>

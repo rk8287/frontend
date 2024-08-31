@@ -19,7 +19,7 @@ const FlightOffers = () => {
           </div>
           <div className="offer-content">
             <h2>Flights under $199</h2>
-            <p>Are you in search of flights under $199? PlanetFares is here to help.</p>
+            <p>Are you in search of flights under $199? TimlessTravel is here to help.</p>
             <p className="price">Fares starting from <strong>$190.44</strong></p>
             <p className="rating">Rating: <span>✩✩✩✩✩</span></p>
           </div>
@@ -32,7 +32,7 @@ const FlightOffers = () => {
           </div>
           <div className="offer-content">
             <h2>Senior Travel Flight</h2>
-            <p>With PlanetFares Senior travel is easy on the pockets!</p>
+            <p>With TimlessTravel Senior travel is easy on the pockets!</p>
             <p className="price">Fares starting from <strong>$120.50</strong></p>
             <p className="rating">Rating: <span>✩✩✩✩✩</span></p>
           </div>
@@ -71,7 +71,7 @@ const FlightOffers = () => {
           </div>
           <div className="offer-content">
             <h2>Fastest Flight</h2>
-            <p>With PlanetFares Senior travel is easy on the pockets!</p>
+            <p>With TimlessTravel Senior travel is easy on the pockets!</p>
             <p className="price">Fares starting from <strong>$120.50</strong></p>
             <p className="rating">Rating: <span>✩✩✩✩✩</span></p>
           </div>
@@ -84,7 +84,7 @@ const FlightOffers = () => {
           </div>
           <div className="offer-content">
             <h2>Chepest Flight</h2>
-            <p>With PlanetFares Senior travel is easy on the pockets!</p>
+            <p>With TimlessTravel Senior travel is easy on the pockets!</p>
             <p className="price">Fares starting from <strong>$120.50</strong></p>
             <p className="rating">Rating: <span>✩✩✩✩✩</span></p>
           </div>
