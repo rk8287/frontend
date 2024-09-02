@@ -13,7 +13,7 @@ const ContactSection = () => {
                 SUPPORT@TIMELESSTRAVEL.US
                 </a>
                 <a href="tel:+18444177506" className="contact-btn phone-btn">
-                  +1(84) 441-775-06 (Toll-free)
+                +1 (844) 417-7506 (Toll-free)
                 </a>
             </div>
         </div>

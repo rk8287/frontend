@@ -47,7 +47,7 @@ const Contact = () => {
         <p><MdLocationOn className="info-icon" /> Address</p>
         <p>737 E 105TH PL CHICAGO, IL 60628</p>
         <p><MdPhone className="info-icon" /> Toll Free</p>
-        <p>Call Now: <a href="tel:+1 8444177506">(84) 441-775-06</a></p>
+        <p>Call Now: <a href="tel:+1 8444177506">+1 (844) 417-7506</a></p>
         <p><MdEmail className="info-icon"/> Email</p>
         <p><a href="mailto:SUPPORT@TIMELESSTRAVEL.US">SUPPORT@TIMELESSTRAVEL.US</a></p>
       </div>

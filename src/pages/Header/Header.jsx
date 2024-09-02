@@ -17,7 +17,7 @@ const Header = () => {
             <header className="one-header">
                 <div className="content">
                     <p>24x7 Live Assistance</p>
-                    <p>(84) 441-775-06</p>
+                    <p>+1 (844) 417-7506</p>
                     <p>SUPPORT@TIMELESSTRAVEL.US</p>
                 </div>
             </header>
@@ -31,7 +31,7 @@ const Header = () => {
 
                 <div className="contact-no">
                     <img src={ic} alt="contact icon" />
-                    <h2><Link style={{color:'orangered'}} to="tel:+1 8444177506">(84) 441-775-06</Link></h2>
+                    <h2><Link style={{color:'orangered'}} to="tel:+1 8444177506">+1 (844) 417-7506</Link></h2>
                 </div>
 
              
