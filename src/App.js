@@ -10,10 +10,13 @@ import Disclaimer from './pages/Disclaimer/Disclaimer';
 import Privacy from './pages/Privacy/Privacy';
 import Contact from './components/Contact/Contact';
 import Term from './pages/TermsandConditions/Term';
+import ThankYouPage from './pages/ThankYouPage/ThankYouPage';
 
 
 
 function App() {
+
+ 
   return (
     <Router>
       <Header />
@@ -25,7 +28,7 @@ function App() {
         <Route path={'/privacy'} element={<Privacy/>}/>
         <Route path={'/contact'} element={<Contact/>}/>
         <Route path={'/term-conditions'} element={<Term/>}/>
-        
+        <Route path={'/success'} element={<ThankYouPage/>}/>
       </Routes>
       <MainFooter/>
     </Router>

@@ -1,6 +1,12 @@
 .contact-container {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
+
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  
   
   .contact-header {
     text-align: center;
