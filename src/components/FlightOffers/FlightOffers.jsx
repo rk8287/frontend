@@ -1,5 +1,6 @@
 import React from "react";
 import "./FlightOffers.css";
+import { Link } from "react-router-dom";
 
 const FlightOffers = () => {
   return (
@@ -11,6 +12,7 @@ const FlightOffers = () => {
           Military Flights, Flights for Students
         </p>
       </header>
+      <Link to={'/contact'}>
       <div className="offers-grid">
         <div className="offer-card">
           <div className="offer-image">
@@ -92,6 +94,7 @@ const FlightOffers = () => {
 
         
       </div>
+      </Link>
     </div>
   );
 };

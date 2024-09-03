@@ -1,5 +1,6 @@
 import React from 'react';
 import './FlightDeals.css';
+import { Link } from 'react-router-dom';
 
 const first = require('../../assets/img/Maldives_img.jpg')
 const second = require('../../assets/img/Paris_img.jpg')
@@ -24,7 +25,7 @@ const FlightDeals = () => {
     <section className="flight-deals">
       <h2>Domestic & International Destinations</h2>
       <p>Browse numbers of exotic destinations with best fares for all domestic and also international flights.</p>
-      <div className="deals-container">
+     <Link to={'/contact'}> <div className="deals-container">
         {deals.map(deal => (
           <div key={deal.id} className="deal-card">
             <img src={deal.img} alt={deal.title} />
@@ -33,7 +34,7 @@ const FlightDeals = () => {
             <p>Find great flight deals</p>
           </div>
         ))}
-      </div>
+      </div></Link>
     </section>
   );
 }

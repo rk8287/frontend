@@ -47,9 +47,9 @@ const Term = () => {
       <h2>12. Contact Us</h2>
       <p>If you have any questions about these Terms, please contact us at:</p>
       <p><strong>Timeless Travels</strong><br />
-        Email: <a href="mailto:info@timelesstravels.com">info@timelesstravels.com</a><br />
-        Phone: [Insert Phone Number]<br />
-        Address: [Insert Address]</p>
+        Email: <a href="mailto:info@timelesstravels.com">SUPPORT@TIMELESSTRAVEL.US</a><br />
+        Phone: +1 (844) 417-7506<br />
+        Address: 737 E 105TH PL CHICAGO, IL 60628</p>
     </div>
   );
 }
